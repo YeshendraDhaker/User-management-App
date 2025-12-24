@@ -2,7 +2,7 @@ spring:
   application:
     name: user-management
   datasource:
-    url: jdbc:${MYSQL_PUBLIC_URL}
+    url: jdbc:mysql://root:QpYLoAKVdOWwIsJviFFTRZXgwyCGjoiO@yamanote.proxy.rlwy.net:53532/railway
   jpa:
     hibernate:
       ddl-auto: update
