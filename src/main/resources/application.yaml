@@ -3,6 +3,7 @@ spring:
     name: user-management
   datasource:
     url: jdbc:mysql://root:QpYLoAKVdOWwIsJviFFTRZXgwyCGjoiO@yamanote.proxy.rlwy.net:53532/railway
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
