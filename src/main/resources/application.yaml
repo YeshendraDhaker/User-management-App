@@ -1,11 +1,13 @@
 spring:
-  application:
-    name: user-management
   datasource:
-    url: jdbc:postgresql://postgres:lcUgePoRjXCycaDdgjcVEQONIHxsqUUJ@postgres.railway.internal:5432/railway
+    # Use the internal host provided by Railway for better performance
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}?sslmode=require
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
-    show-sql: true
