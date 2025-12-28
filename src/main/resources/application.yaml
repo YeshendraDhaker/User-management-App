@@ -2,7 +2,7 @@ spring:
   application:
     name: user-management
   datasource:
-    url: postgresql://postgres:lcUgePoRjXCycaDdgjcVEQONIHxsqUUJ@caboose.proxy.rlwy.net:44635/railway
+    url: jdbc:postgresql://postgres:lcUgePoRjXCycaDdgjcVEQONIHxsqUUJ@caboose.proxy.rlwy.net:44635/railway
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
