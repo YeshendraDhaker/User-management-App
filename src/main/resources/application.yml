@@ -1,9 +1,11 @@
 spring:
   datasource:
-    url: jdbc:mysql://root:xDfdRIMTEXYZzauhkpQmHxJYJjWSSpfY@tramway.proxy.rlwy.net:31208/railway
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://ballast.proxy.rlwy.net:16574/railway
+    username: postgres
+    password: BlcyLZeoERNeRMJxfMSjxfGoBraAtrfv
+    driver-class-name: org.postgresql.Driver
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
