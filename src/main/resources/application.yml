@@ -1,5 +1,5 @@
 spring:
   datasource:
-    url: jdbc:${SPRING_URL}
+    url: postgresql://postgres:DlLJxwBZcVBxeDbIUIxnQSMtyYohbuYG@postgres.railway.internal:5432/railway
   jpa:
     database-platform: ${SPRING_DIALECT}	
