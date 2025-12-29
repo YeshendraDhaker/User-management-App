@@ -1,3 +1,5 @@
 spring:
   datasource:
     url: jdbc:${SPRING_URL}
+  jpa:
+    database-platform: ${SPRING_DIALECT}	
