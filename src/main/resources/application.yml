@@ -1,5 +1,9 @@
 spring:
   datasource:
-    url: postgresql://postgres:DlLJxwBZcVBxeDbIUIxnQSMtyYohbuYG@postgres.railway.internal:5432/railway
+    url: jdbc:mysql://root:xDfdRIMTEXYZzauhkpQmHxJYJjWSSpfY@tramway.proxy.rlwy.net:31208/railway
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database-platform: ${SPRING_DIALECT}	
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
