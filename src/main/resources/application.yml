@@ -5,6 +5,7 @@ spring:
     url: jdbc:postgresql://postgres:bWmvSAaqdshusfQVjbTdrBVlaidqqnYg@metro.proxy.rlwy.net:48912/railway
     driver-class-name: org.postgresql.Driver
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
