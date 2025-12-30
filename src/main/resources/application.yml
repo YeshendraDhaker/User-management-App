@@ -2,9 +2,7 @@ spring:
   application:
     name: user-management
   datasource:
-    url: jdbc:postgresql://localhost:5432/myappdb
-    username: myappuser
-    password: myapppassword
+    url: jdbc:postgresql://postgres:bWmvSAaqdshusfQVjbTdrBVlaidqqnYg@metro.proxy.rlwy.net:48912/railway
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
