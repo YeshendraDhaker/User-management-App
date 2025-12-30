@@ -2,8 +2,10 @@ spring:
   application:
     name: user-management
   datasource:
-    url: jdbc:postgresql://postgres:bWmvSAaqdshusfQVjbTdrBVlaidqqnYg@metro.proxy.rlwy.net:48912/railway
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://metro.proxy.rlwy.net:48912/railway
+    username: postgres
+    password: bWmvSAaqdshusfQVjbTdrBVlaidqqnYg
+    driver-class-name: org.postgresql.Driver 
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
